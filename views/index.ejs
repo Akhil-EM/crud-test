@@ -40,8 +40,7 @@
       <% if (status==='success') { %>
           <h4>Users list</h4>
           <hr/>
-          <div class="table-responsive">
-
+          <div class="table-responsive ">
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -54,9 +53,8 @@
                 <th>Delete</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id='table-body'>
               <% for( let index = 0; index < data.length; index++ ) { %>
-
                 <tr>
                   <td><%= data[index].ROLLNO %></td>
                   <td><%= data[index].NAME %></td>
@@ -81,6 +79,7 @@
                 </tr>
                       
               <% } %>
+
             </tbody>
           </table>
         </div>
@@ -91,4 +90,5 @@
     </div>
     
   </body>
+ 
 </html>
