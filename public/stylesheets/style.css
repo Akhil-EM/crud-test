@@ -1,0 +1,21 @@
+.snippet {
+    position: static;
+    top: 0;
+    right: 0;
+}
+
+.snippet-p {
+    background-color: chocolate;
+    color: #fff;
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* sls config credentials --provider aws --key AKIAZ5TYGCHZSVGB52JR --secret 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 */

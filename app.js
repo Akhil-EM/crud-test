@@ -26,7 +26,7 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/add-user', usersRouter);
-
+app.use('/js-code', express.static(__dirname + '/javascripts'));
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));

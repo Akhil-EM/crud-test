@@ -5,7 +5,7 @@ var { listUsers, deleteUser } = require('../util/sql-query')
 router.get('/', function(req, res, next) {
     listUsers('')
         .then((_data) => {
-            console.log(_data)
+            // console.log(_data)
             res.render('index', { status: 'success', data: _data, title: 'student list' });
         }).catch((error) => {
             console.log('error');
